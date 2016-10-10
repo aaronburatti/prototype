@@ -1,0 +1,293 @@
+`<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <header>
+    <div class="container top-nav">
+    <div class="row">
+      <nav aria-label="..." class="">
+        <ul class="nav nav-pills top-head col-xs-offset-1">
+          <li class="full-logo"><img src="images/logo.png"></li>
+          <li class="adjust-left1">Candidates</li>
+          <li class="adjust-left2">Jobs</li>
+          <li class="adjust-left2">Home</li>
+          <li class="adjust-left2">About</li>
+          <li class="adjust-left3">Login</li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+    <div class="bottom-nav container">
+      <div class="row">
+        <nav aria-label="...">
+        <ul class="nav nav-pills bottom-head col-xs-offset-1">
+          <li><img class="search-icon" src="images/search.png"></li>
+          <input id="search-bar" type="text" placeholder="Search">
+        </ul>
+      </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <table id="search-results" class="table col-xs-10 col-xs-offset-1 red">
+          <tr class="">
+            <td class="col-xs-1 left"><b class="black">Luke McCarthy</b><br/>Java Developer</td>
+            <td class="col-xs-1 center"><span class=" applied">Applied</span></td>
+            <td class="col-xs-1 left">for:dev ops at facebook senior java developer</td>
+          </tr>
+          <tr >
+            <td class="col-xs-1 left"><b class="black">Luke Smith</b></br>PHP Developer</td>
+            <td class="col-xs-1 center"><span class="suitable">Suitable</span></td>
+            <td class="col-xs-1 left">for:dev ops at facebook senior PHP Developer</td>
+          </tr>
+          <tr >
+            <td class="col-xs-1 left"><b class="black">Luke Noble</b><br/> C# developer</td>
+            <td class="col-xs-1 center"><span class="suitable">Suitable</span></td>
+            <td class="col-xs-1 left">for:dev ops at facebook senior C# developer</td>
+          </tr>
+        </table>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 searched-area"></div>
+      </div>
+    </div>
+</header>
+
+
+  <body>
+    <div id="greyout" class="">
+    <section class="">
+      <div class="container">
+        <div class="row">
+          <div class="ready-to-hire col-xs-3 col-xs-offset-1">
+            <span class="head-num">12</span>
+            <img src="images/hire.png" class=" pull-right head-icon1">
+            <h4>ready to hire</h4>
+            <i class="fa fa-sort-desc down"></i>
+          </div>
+          <div class="suitable-candidates col-xs-3">
+            <span class="head-num">28</span>
+            <img src="images/candidates.png" class="pull-right head-icon2">
+            <h4>suitable candidates</h4>
+          </div>
+          <div class="reminders col-xs-3">
+            <span class="head-num">106</span>
+            <img src="images/reminderblue.png" class="pull-right head-icon3">
+            <h4>reminders</h4>
+            <i class="fa fa-sort-desc down2"></i>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+      <section>
+      <table id="ready-table" class="col-xs-offset-1 col-xs-10">
+        <tr>
+          <td class="col-xs-4"><img src="images/reminder-active.png" class="bell1"><b> Lazko Bock</b> Data Engineer, Google</td>
+          <td class="col-xs-4">Social Media Marketing, Social Media<br/>
+            Business Development, Advertisement</td>
+          <td class="col-xs-2"><button class="first-round">Email Now</button></td>
+        </tr>
+        <tr>
+          <td class="col-xs-4"><img src="images/reminder.png" class="bell1"><b>Katalina Bognar</b>Software Developer, Amazon</td>
+          <td class="col-xs-4">Social Media Marketing, Social Media<br/>
+            Business Development, Advertisement</td>
+          <td class="col-xs-2"><button class="first-round">Email Now</button></td>
+        </tr>
+        <tr>
+          <td class="col-xs-4"><img src="images/reminder.png" class="bell1"><b> Lazko Bock</b> Data Engineer, Google</td>
+          <td class="col-xs-4">Social Media Marketing, Social Media<br/>
+            Business Development, Advertisement</td>
+          <td class="col-xs-2"><button class="first-round">Email Now</button></td>
+        </tr>
+      </table>
+    </section>
+  </div>
+</div>
+
+
+  <div class="container">
+    <div class="row">
+      <section>
+        <table id="reminder-table" class="col-xs-offset-1 col-xs-10">
+          <tr>
+            <td class="col-xs-7"><img  class="reminder-icons" src="images/call.png">Call <b> Lazko Bock</b> <span class="reminder-blue">at 11am, June 22nd</span> for the phone screen interview</td>
+            <td class="col-xs-1"><span class="turn-off">snooze</span></td>
+            <td class="col-xs-2"><button class="reminder-btn">+1 465 789 9876</button></td>
+          </tr>
+          <tr>
+            <td class="col-xs-7"><img class="reminder-icons" src="images/note.png">Note <b> Katalina Bognar</b> <span class="reminder-blue">at 6pm, June 22nd</span> for the phone screen interview</td>
+            <td class="col-xs-1"><span class="turn-off">snooze</span></td>
+            <td class="col-xs-2"><button class="reminder-btn">Note</button></td>
+          </tr>
+          <tr>
+            <td class="col-xs-7"><i class="fa fa-envelope-o reminder-icons"></i>Email <b> Katalina Bognar</b> <span class="reminder-blue">at 11am, June 22nd</span> for the phone screen interview</td>
+            <td class="col-xs-1"><span class="turn-off">snooze</span> </td>
+            <td class="col-xs-2"><button class="reminder-btn">Email Now</button></td>
+          </tr>
+          <tr>
+            <td class="col-xs-7"><img class="reminder-icons" src="images/note.png">Note <b> Lazko Bock</b> <span class="reminder-blue">at 11am, June 22nd</span> for the phone screen interview</td>
+            <td class="col-xs-1"> <span class="turn-off">snooze</span> </td>
+            <td class="col-xs-2"><span class="grey-out">time is out</span></td>
+          </tr>
+        </table>
+      </section>
+  </div>
+</div>
+
+    <section class="container ">
+      <div class="row clearfix">
+        <div class="col-xs-offset-1 pull-left"><span class="pipe-head">Current Pipeline</span></div>
+        <div class="pipe col-xs-10 col-xs-offset-1">
+          <div class="pipebox col-xs-2">
+              <h6>Hired <div class="circle color1"></div></h6>
+              <h4>4</h4>
+              <h6>Notes <span class="pipenum">1</span></h6>
+              <h6>Profiles <span class="pipenum">3</span></h6>
+            </div>
+            <div class=" pipebox greenbar col-xs-2">
+              <h6>Offers Made<span class="circle color2"></span></h6>
+              <h4>10</h4>
+              <h6>feedback <span class="pipenum">3</span></h6>
+              <h6>Profiles <span class="pipenum">3</span></h6>
+              </div>
+            <div class="pipebox col-xs-2">
+              <h6>Onsite Interview<span class="circle color3"></span></h6>
+              <h4>17</h4>
+              <h6>feedback <span class="pipenum">7</span></h6>
+              <h6>Profiles <span class="pipenum">3</span></h6>
+            </div>
+            <div id="phone-screen" class="pipebox col-xs-2">
+              <h6>Phone Screen<span class="circle color5"></span></h6>
+              <h4>28</h4>
+              <h6>feedback <span class="pipenum">12</span></h6>
+              <h6>Profiles <span class="pipenum">3</span></h6>
+            </div>
+            <div class="pipebox col-xs-2">
+              <h6>Positions<span class="circle color6"></span></h6>
+              <h4>45</h4>
+              <h6>Notes <span class="pipenum">1</span></h6>
+              <h6>Profiles <span class="pipenum">3</span></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="sum-table" class="col-xs-offset-1">
+        <div class="container">
+          <div class="row clearfix">
+        <div class="pipe-head2">Phone Screen Summary</div>
+          <table class="summary col-xs-10 col-xs-offset-1">
+            <tr class="sum-head">
+              <td><h4 class="col-xs-offset-2">Jobs</h4></td>
+              <td><h4 class="col-xs-offset-2">Candidates</h4></td>
+              <td><h4 class="col-xs-offset-2">Feedback Summary</h4></td>
+            </tr>
+            <tr>
+              <td class="table-pad col-xs-1 col-xs-offset-3"><button class="btn btn-success">Data Analyst</button></td>
+              <td class="table-pad col-xs-4 col-xs-offset-6 border-bottom"><b>Lazlo Bock</b> Data Engineer, Google</br>
+                                          <span class="fa fa-envelope-o email"></span>lazlo.b@google.com</br>
+                                          <span class="glyphicon glyphicon-phone"></span>654-356-1120</br>
+                                          <button class="first-round">Invite to first Round</button>
+
+              </td>
+              <td class="table-pad col-xs-6 col-xs-offset-7 border-bottom">I think lazlo will be a good fit for this job</td>
+            </tr>
+            <tr>
+              <td class="table-pad col-xs-1 col-xs-offset-3"></td>
+              <td class="table-pad col-xs-4 col-xs-offset-6 border-bottom"><b>Lazlo Bock</b> Data Engineer, Google</br>
+                                          <span class="fa fa-envelope-o email"></span>lazlo.b@google.com</br>
+                                          <span class="glyphicon glyphicon-phone"></span>654-356-1120</br>
+                                          <button class="first-round">Invite to first Round</button>
+
+              </td>
+              <td class="table-pad col-xs-6 col-xs-6 col-xs-offset-7 border-bottom">I think lazlo will be a good fit for this job</td>
+            </tr>
+            <tr>
+              <td class="table-pad col-xs-1 col-xs-offset-3"></td>
+              <td class="table-pad col-xs-4 col-xs-offset-6 border-bottom"><b>Lazlo Bock</b> Data Engineer, Google</br>
+                                          <span class="fa fa-envelope-o email"></span>lazlo.b@google.com</br>
+                                          <span class="glyphicon glyphicon-phone"></span>654-356-1120</br>
+                                          <button class="first-round">Invite to first Round</button>
+
+              </td>
+              <td class="table-pad col-xs-6 col-xs-6 col-xs-offset-7 border-bottom">I think lazlo will be a good fit for this job</td>
+            </tr>
+            <tr>
+              <td class="table-pad col-xs-1 col-xs-offset-3"><button class="btn button2">Software Engineer</button></td>
+              <td class="table-pad col-xs-4 col-xs-offset-6 border-bottom"><b>Katalina Bognar</b> Software Designer, Amazon</br>
+                                          <span class="fa fa-envelope-o email"></span>katalina.b@Amazon.com</br>
+                                          <span class="glyphicon glyphicon-phone"></span>654-356-1120</br>
+                                          <button class="first-round">Invite to first Round</button></td>
+              <td class="table-pad col-xs-6 col-xs-offset-7 border-bottom">Katalina's skills are a good match but she is unwilling to relocate</td>
+            </tr>
+            <tr>
+              <td class="table-pad col-xs-1 col-xs-offset-3"><button class="btn button3">Software Engineer</button></td>
+              <td class="table-pad col-xs-4 col-xs-offset-6"><b>Katalina Bognar</b> Software Designer, Amazon</br>
+                                          <span class="fa fa-envelope-o email"></span>katalina.b@Amazon.com</br>
+                                          <img src="images/call.png" class="phone">654-356-1120</br>
+                                          <button class="first-round">Invite to first Round</button></td>
+              <td class="table-pad col-xs-6 col-xs-offset-7">Katalina's skills are a good match but she is unwilling to relocate</td>
+            </tr>
+          </table>
+        </section>
+
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="pipe-head3">Activities</div>
+            <table class="col-xs-10 col-xs-offset-1 activities">
+              <tr class="white">
+                <td class="col-xs-1"><img class="pull-right" src="images/new-skill.png"></td>
+                <td class="col-xs-3"><b>Lazlo Bock</b>, Data Engineer, Google</td>
+                <td class="col-xs-3 leftpush">Has added a <span class="blue">new skill</span> on his linkedin acocunt</td>
+                <td class="col-xs-3"><div class="say-btn pull-right">Say Hello</div></td>
+                <div class="bot-bar"></div>
+              </tr>
+              <tr class="white">
+                <td class="col-xs-1"><img class="pull-right" src="images/recommendation.png"></td>
+                <td class="col-xs-3"><b>Nick Bock</b>, Data Engineer, Uber</td>
+                <td class="col-xs-3">Has got a <span class="blue">new job at Yelp</span></td>
+                <td class="col-xs-3"><div class="say-btn pull-right">Say Congratualtions</div></td>
+              </tr>
+              <tr>
+                <td class="col-xs-1"><img class="pull-right" src="images/new-project.png"></td>
+                <td class="col-xs-3"><b>Nick Bock</b>, Data Engineer, Uber</td>
+                <td class="col-xs-3">Has got a <span class="blue">new recommendation</span></td>
+                <td class="col-xs-3"><div class="say-btn pull-right">Say Hello</div></td>
+              </tr>
+              <tr>
+                <td class="col-xs-1"><img class="pull-right" src="images/promoted.png"></td>
+                <td class="col-xs-3"><b>Nick Bock</b>, Data Engineer, Uber</td>
+                <td class="col-xs-3">Added a <span class="blue">new project on dribble</span></td>
+                <td class="col-xs-3"><div class="say-btn pull-right">Say Congratualtions</div></td>
+              </tr>
+              <tr>
+                <td class="col-xs-1"><img class="pull-right" src="images/new-job.png"></td>
+                <td class="col-xs-3"><b>Katalina Bognar</b>, Software Developer, Amazon</td>
+                <td class="col-xs-3">Has been <span class="blue">promoted on facebook</span></td>
+                <td class="col-xs-3"><div class="say-btn pull-right">Say Congratualtions</div></td>
+              </tr>
+              <tr>
+                <td class="col-xs-1"><img class="pull-right" src="images/year.png"></td>
+                <td class="col-xs-3"><b>Lazlo Bock</b>, Data Engineer, Google</td>
+                <td class="col-xs-3"><span class="blue">Completed a year at Uber</span></td>
+                <td class="col-xs-3"><div class="say-btn pull-right">Say Congratualtions</div></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
